@@ -388,40 +388,40 @@
 					</div>
 					<div class="col-md-6">
 						<div class="book-form inn-com-form">
-							<form action="/success.html" class="col s12">
+							<form action="success.html" class="col s12" id="booking-inquiry-form" method="GET">
 								<div class="row">
 									<div class="input-field col s6">
-										<input type="text" class="validate">
+										<input type="text" class="validate" id="name" name="name">
 										<label>Full Name</label>
 									</div>
 									<div class="input-field col s6">
-										<input type="text" class="validate">
+										<input type="text" class="validate" id="email" name="email">
 										<label>Email</label>
 									</div>
 								</div>
 								<div class="row">
 									<div class="input-field col s6">
-										<input type="text" class="validate">
+										<input type="text" class="validate" id="phone" name="phone">
 										<label>Phone</label>
 									</div>
 									<div class="input-field col s6">
-										<input type="text" class="validate">
+										<input type="text" class="validate" id="mobile" name="mobile">
 										<label>Mobile</label>
 									</div>
 								</div>
 								<div class="row">
 									<div class="input-field col s6">
-										<input type="text" class="validate">
+										<input type="text" class="validate" id="city" name="city">
 										<label>City</label>
 									</div>
 									<div class="input-field col s6">
-										<input type="text" class="validate">
+										<input type="text" class="validate" id="country" name="country">
 										<label>Country</label>
 									</div>
 								</div>
 								<div class="row">
 									<div class="input-field col s6">
-										<select>
+										<select id="adults" name="adults">
 											<option value="" disabled selected>No of adults</option>
 											<option value="1">1</option>
 											<option value="2">2</option>
@@ -430,8 +430,8 @@
 										</select>
 									</div>
 									<div class="input-field col s6">
-										<select>
-											<option value="" disabled selected>No of childrens</option>
+										<select id="children" name="children">
+											<option value="" disabled selected>No of children</option>
 											<option value="1">1</option>
 											<option value="2">2</option>
 											<option value="3">3</option>
@@ -457,6 +457,7 @@
 								</div>
 								<div class="row">
 									<div class="input-field col s12">
+										<input type="hidden" name="event" id="event" value="Booking Submission" />
 										<input type="submit" value="submit" class="form-btn"> </div>
 								</div>
 							</form>

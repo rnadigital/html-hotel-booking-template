@@ -2,6 +2,13 @@
 <html lang="en">
 
 <head>
+	<script>
+		window.dataLayer = [];
+		const urlSearchParams = new URLSearchParams(window.location.search);
+		const params = Object.fromEntries(urlSearchParams.entries());
+		console.log(params);
+		window.dataLayer.push(params);
+	</script>
 	<script src="https://assets.adobedtm.com/9cb3dc285aac/3a4bf0f82d26/launch-aad495d15d84-development.min.js" async></script>
 	<!-- Google Tag Manager -->
 	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
